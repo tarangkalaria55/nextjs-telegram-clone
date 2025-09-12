@@ -31,6 +31,9 @@
 	// Use Biome as default formatter
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "always"
+	},
 
 	// Recommended editor behaviors
 	"files.eol": "\n", // Always LF

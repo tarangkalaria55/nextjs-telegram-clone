@@ -1,0 +1,48 @@
+{
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true
+	},
+	"hide-files.files": [],
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#c31498",
+		"activityBar.background": "#c31498",
+		"activityBar.foreground": "#e7e7e7",
+		"activityBar.inactiveForeground": "#e7e7e799",
+		"activityBarBadge.background": "#87ad12",
+		"activityBarBadge.foreground": "#15202b",
+		"commandCenter.border": "#e7e7e799",
+		"sash.hoverBorder": "#c31498",
+		"statusBar.background": "#950f74",
+		"statusBar.foreground": "#e7e7e7",
+		"statusBarItem.hoverBackground": "#c31498",
+		"statusBarItem.remoteBackground": "#950f74",
+		"statusBarItem.remoteForeground": "#e7e7e7",
+		"titleBar.activeBackground": "#950f74",
+		"titleBar.activeForeground": "#e7e7e7",
+		"titleBar.inactiveBackground": "#950f7499",
+		"titleBar.inactiveForeground": "#e7e7e799"
+	},
+	"peacock.color": "#950f74",
+
+	// Use Biome as default formatter
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.formatOnSave": true,
+
+	// Recommended editor behaviors
+	"files.eol": "\n", // Always LF
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+
+	// Let Biome handle linting instead of ESLint
+	"eslint.enable": false,
+
+	// Indent setting
+	"editor.tabSize": 2,
+	"editor.indentSize": "tabSize",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false
+}

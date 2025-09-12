@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    lint:
+      glob: "*.{js,ts,jsx,tsx,json,jsonc}"
+      run: bash scripts/run-lint.sh {staged_files}
+
+pre-push:
+  commands:
+    lint:
+      glob: "*.{js,ts,jsx,tsx,json,jsonc}"
+      run: bash scripts/run-lint.sh {push_files}

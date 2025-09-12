@@ -9,6 +9,12 @@
 
 set -e  # Exit immediately if any command fails
 
+# 0️⃣ Ensure dependencies installed
+if [ ! -d "node_modules" ]; then
+  echo "❌ node_modules not found. Run 'npm install' (or pnpm/yarn/bun install) first."
+  exit 1
+fi
+
 # 1️⃣ Detect Node
 if command -v fnm >/dev/null 2>&1; then
   export PATH="$HOME/.fnm:$PATH"

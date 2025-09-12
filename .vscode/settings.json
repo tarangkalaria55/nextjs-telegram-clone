@@ -48,6 +48,13 @@
 	"editor.indentSize": "tabSize",
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
+
+	"editor.wordWrap": "on",
+
+	"editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"editor.allowVariableFontsInAccessibilityMode": true,
+
 	// Optional: tailor formatting
 	"[json]": {
 		"editor.defaultFormatter": "biomejs.biome"

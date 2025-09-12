@@ -13,5 +13,6 @@ declare namespace NodeJS {
 		readonly NEXT_PUBLIC_CONVEX_URL: string;
 		readonly CLERK_JWT_ISSUER_DOMAIN: string;
 		readonly CLERK_PUBLISHABLE_KEY: string;
+		readonly NEXT_PUBLIC_CLERK_FRONTEND_API_URL: string;
 	}
 }

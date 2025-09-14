@@ -55,6 +55,10 @@
 	"editor.fontLigatures": true,
 	"editor.allowVariableFontsInAccessibilityMode": true,
 
+	"files.associations": {
+		"env-sample": "dotenv"
+	},
+
 	// Optional: tailor formatting
 	"[json]": {
 		"editor.defaultFormatter": "biomejs.biome"

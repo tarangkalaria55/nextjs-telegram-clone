@@ -19,7 +19,7 @@ declare namespace NodeJS {
 		// readonly NEXT_PUBLIC_CLERK_FRONTEND_API_URL:string
 
 		// Stream
-		readonly NEXT_PUBIC_STREAM_API_KEY: string;
+		readonly NEXT_PUBLIC_STREAM_API_KEY: string;
 		readonly STREAM_API_SECRET_KEY: string;
 	}
 }

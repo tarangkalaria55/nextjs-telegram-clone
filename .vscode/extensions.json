@@ -2,7 +2,8 @@
 	"recommendations": [
 		"biomejs.biome",
 		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"mikestead.dotenv"
 	],
 	"unwantedRecommendations": ["ms-vscode.vscode-typescript-next"]
 }

@@ -16,6 +16,7 @@
 # next.js
 /.next/
 /out/
+/publish/
 
 # production
 /build
@@ -46,3 +47,6 @@ package-lock.json
 .flaskenv*
 !.env.project
 !.env.vault
+
+web.config
+

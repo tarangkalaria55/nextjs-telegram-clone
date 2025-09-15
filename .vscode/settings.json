@@ -58,8 +58,12 @@
 	"editor.allowVariableFontsInAccessibilityMode": true,
 
 	"files.associations": {
-		"env-sample": "dotenv"
+		"env-sample": "dotenv",
+		"web.config": "xml",
+		"web.local.config": "xml"
 	},
+
+	"git.autofetchPeriod": 180,
 
 	// Optional: tailor formatting
 	"[json]": {

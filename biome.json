@@ -14,7 +14,9 @@
 			"!dist",
 			"!build",
 			"!convex/_generated/**/*.*",
-			"!**/src/components/ui/**/*.*"
+			"!**/src/components/ui/**/*.*",
+			"!server.js",
+			"!publish/**/*.*"
 		]
 	},
 	"formatter": {

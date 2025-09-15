@@ -10,7 +10,6 @@
 		"lint:fix": "biome check --no-errors-on-unmatched --files-ignore-unknown=true --write",
 		"format": "biome format --no-errors-on-unmatched --files-ignore-unknown=true --write",
 		"typecheck": "tsc --noEmit --strict",
-		"prepare": "lefthook install",
 		"dotnet-vault:pull": "npx dotenv-vault@latest pull",
 		"dotnet-vault:push": "npx dotenv-vault@latest push"
 	},
@@ -39,7 +38,6 @@
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
-		"lefthook": "^1.13.0",
 		"tailwindcss": "^4",
 		"tw-animate-css": "^1.3.8",
 		"typescript": "^5"

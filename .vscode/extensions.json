@@ -5,5 +5,5 @@
 		"esbenp.prettier-vscode",
 		"dotenv.dotenv-vscode"
 	],
-	"unwantedRecommendations": ["mikestead.dotenv"]
+	"unwantedRecommendations": ["dotenv.dotenv-vscode"]
 }

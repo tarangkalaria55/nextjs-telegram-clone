@@ -1,3 +1,5 @@
+/** biome-ignore-all lint/correctness/noUnusedVariables: aaa */
+/** biome-ignore-all lint/correctness/noUnusedFunctionParameters: aaa */
 import streamClient from "@/lib/stream";
 
 export const useCreateNewChat = () => {

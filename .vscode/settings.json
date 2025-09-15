@@ -42,6 +42,8 @@
 
 	// Let Biome handle linting instead of ESLint
 	"eslint.enable": false,
+	"biome.enabled": true,
+	"biome.configurationPath": "biome.json",
 
 	// Indent setting
 	"editor.tabSize": 2,

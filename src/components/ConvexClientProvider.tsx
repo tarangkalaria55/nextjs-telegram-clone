@@ -5,7 +5,7 @@ import { ConvexReactClient } from "convex/react";
 import { ConvexProviderWithClerk } from "convex/react-clerk";
 
 if (!process.env.NEXT_PUBLIC_CONVEX_URL) {
-	throw new Error("Missing NEXT_PUBLIC_CONVEX_URL from .env");
+	throw new Error("NEXT_PUBLIC_CONVEX_URL is not set");
 }
 
 const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL);

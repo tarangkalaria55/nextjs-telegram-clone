@@ -10,7 +10,9 @@
 		"lint:fix": "biome check --no-errors-on-unmatched --files-ignore-unknown=true --write",
 		"format": "biome format --no-errors-on-unmatched --files-ignore-unknown=true --write",
 		"typecheck": "tsc --noEmit --strict",
-		"prepare": "lefthook install"
+		"prepare": "lefthook install",
+		"dotnet-vault:pull": "npx dotenv-vault@latest pull",
+		"dotnet-vault:push": "npx dotenv-vault@latest push"
 	},
 	"dependencies": {
 		"@clerk/clerk-react": "^5.46.2",

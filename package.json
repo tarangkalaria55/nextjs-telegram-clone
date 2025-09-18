@@ -12,8 +12,8 @@
 		"typecheck": "tsc --noEmit --strict",
 		"dotnet-vault:pull": "npx dotenv-vault@latest pull",
 		"dotnet-vault:push": "npx dotenv-vault@latest push",
-		"publish": "node ./build-publish.js",
-		"prepublish": "npm run build"
+		"iis:publish": "node ./build-publish.js",
+		"preiis:publish": "npm run build"
 	},
 	"dependencies": {
 		"@clerk/nextjs": "^6.31.10",

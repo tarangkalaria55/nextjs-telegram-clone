@@ -24,11 +24,7 @@ function Header() {
 					<UserButton />
 				</Authenticated>
 				<Unauthenticated>
-					<SignInButton
-						mode="modal"
-						forceRedirectUrl="/dashboard"
-						signUpForceRedirectUrl="/dashboard"
-					>
+					<SignInButton mode="modal">
 						<Button variant="outline">Sign In</Button>
 					</SignInButton>
 				</Unauthenticated>

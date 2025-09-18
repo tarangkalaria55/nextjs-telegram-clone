@@ -65,6 +65,8 @@
 
 	"git.autofetchPeriod": 180,
 
+	"typescript.updateImportsOnPaste.enabled": false,
+
 	// Optional: tailor formatting
 	"[json]": {
 		"editor.defaultFormatter": "biomejs.biome"

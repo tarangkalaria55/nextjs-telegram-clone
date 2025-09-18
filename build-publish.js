@@ -11,6 +11,9 @@ const rootDir = process.cwd();
 const publishDir = path.join(rootDir, "publish");
 const standaloneDir = path.join(rootDir, ".next", "standalone");
 
+const publishNextStaticDir = path.join(publishDir, ".next", "static");
+const nextStaticDir = path.join(rootDir, ".next", "static");
+
 // Parse command-line arguments
 const args = process.argv.slice(2);
 const envArgIndex = args.indexOf((arg) => arg === "--env");
@@ -166,6 +169,10 @@ async function buildPublish() {
 
 		console.log("📦 Copying standalone build...");
 		await fs.copy(standaloneDir, publishDir);
+
+		console.log("📦 Copying standalone build...");
+		await fs.copy(nextStaticDir, publishNextStaticDir);
+
 		console.log("📦 Copying server.js...");
 		await fs.copy(
 			path.join(rootDir, "server.js"),

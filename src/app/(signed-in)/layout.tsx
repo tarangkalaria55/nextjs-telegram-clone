@@ -33,7 +33,7 @@ export default function Layout({ children }: React.PropsWithChildren) {
 							/>
 							<Link href="/dashboard">
 								<h1 className="text-lg font-bold tracking-wider uppercase">
-									Beam
+									Appliquer Chat
 								</h1>
 							</Link>
 						</header>

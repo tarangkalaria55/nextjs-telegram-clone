@@ -11,7 +11,9 @@
 		"format": "biome format --no-errors-on-unmatched --files-ignore-unknown=true --write",
 		"typecheck": "tsc --noEmit --strict",
 		"dotnet-vault:pull": "npx dotenv-vault@latest pull",
-		"dotnet-vault:push": "npx dotenv-vault@latest push"
+		"dotnet-vault:push": "npx dotenv-vault@latest push",
+		"publish": "node ./build-publish.js",
+		"prepublish": "npm run build"
 	},
 	"dependencies": {
 		"@clerk/nextjs": "^6.31.10",
@@ -38,8 +40,12 @@
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"cross-spawn": "^7.0.6",
+		"dotenv": "^17.2.2",
+		"fs-extra": "^11.3.2",
 		"tailwindcss": "^4",
 		"tw-animate-css": "^1.3.8",
-		"typescript": "^5"
+		"typescript": "^5",
+		"xml2js": "^0.6.2"
 	}
 }

@@ -16,7 +16,8 @@
 			"!convex/_generated/**/*.*",
 			"!**/src/components/ui/**/*.*",
 			"!server.js",
-			"!publish/**/*.*"
+			"!publish/**/*.*",
+			"!build-publish.js"
 		]
 	},
 	"formatter": {

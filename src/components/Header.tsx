@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
 
-function Header() {
+export function Header() {
 	const pathname = usePathname();
 	const isDashboard = pathname.startsWith("/dashboard");
 	return (
@@ -14,7 +14,19 @@ function Header() {
 			<Link href="/dashboard" className="font-medium uppercase tracking-widest">
 				Beam
 			</Link>
-			<div className="flex items-center gap-2">
+			<div className="flex items-center gap-x-4">
+				{/* <SignedOut>
+					<SignInButton>
+						<Button variant="ghost">Sign in</Button>
+					</SignInButton>
+					<SignUpButton>
+						<Button>Sign up</Button>
+					</SignUpButton>
+				</SignedOut>
+				<SignedIn>
+					<UserButton />
+				</SignedIn> */}
+
 				<Authenticated>
 					{isDashboard && (
 						<Link href="/dashboard">
@@ -32,5 +44,3 @@ function Header() {
 		</header>
 	);
 }
-
-export default Header;

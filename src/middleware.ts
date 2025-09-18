@@ -9,8 +9,7 @@ export default clerkMiddleware(async (auth, req) => {
 
 	if (isPublicRoute(req) && userId) {
 		return NextResponse.redirect(new URL("/dashboard", req.url));
-	}
-	if (isAuthenticatedRoute(req)) {
+	} else if (isAuthenticatedRoute(req)) {
 		await auth.protect();
 	}
 });

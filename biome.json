@@ -15,7 +15,8 @@
 			"!build",
 			"!convex/_generated/**/*.*",
 			"!**/src/components/ui/**/*.*",
-			"!server.*",
+			"!server.js",
+			"!server.ts",
 			"!publish/**/*.*",
 			"!build-publish.js"
 		]

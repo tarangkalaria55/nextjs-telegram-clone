@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/sidebar";
 import streamClient from "@/lib/stream";
 
-function Layout({ children }: React.PropsWithChildren) {
+export default function Layout({ children }: React.PropsWithChildren) {
 	return (
 		<UserSyncWrapper>
 			<Chat client={streamClient}>
@@ -46,4 +46,3 @@ function Layout({ children }: React.PropsWithChildren) {
 		</UserSyncWrapper>
 	);
 }
-export default Layout;

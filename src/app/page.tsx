@@ -1,7 +1,7 @@
 import { SignedOut, SignInButton } from "@clerk/nextjs";
 import { MessageCircle, Shield, User, Video, Zap } from "lucide-react";
 import FeatureCard from "@/components/FeatureCard";
-import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {

@@ -173,11 +173,27 @@ async function buildPublish() {
 		console.log("📦 Copying standalone build...");
 		await fs.copy(nextStaticDir, publishNextStaticDir);
 
-		console.log("📦 Copying server.js...");
-		await fs.copy(
-			path.join(rootDir, "server.js"),
-			path.join(publishDir, "server.js"),
-		);
+		console.log("📝 Compiling server.ts...");
+		await runCommand("npx", ["tsc", "-p", "tsconfig.server.json"]);
+
+		// console.log("📦 Copying server.js...");
+		// await fs.copy(
+		// 	path.join(rootDir, "server.js"),
+		// 	path.join(publishDir, "server.js"),
+		// );
+
+		// console.log("📝 Compiling logger.ts...");
+		// await runCommand("npx", [
+		//   "tsc",
+		//   "logger.ts",
+		//   "--outDir",
+		//   "publish",
+		//   "--esModuleInterop",
+		//   "--target",
+		//   "ES2020",
+		//   "--module",
+		//   "commonjs",
+		// ]);
 
 		console.log("📄 Copying web.config...");
 		await injectEnvIntoWebConfig(
